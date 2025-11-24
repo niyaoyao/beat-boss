@@ -754,7 +754,7 @@
         // 自动回血循环 (每秒回20)
         setInterval(() => {
             if (!isGameOver && hp < MAX_HP && hp > 0) {
-                hp = Math.min(MAX_HP, hp + 20);
+                hp = Math.min(MAX_HP, hp + 40);
                 updateHpBar();
                 updateDamageVisuals();
             }
