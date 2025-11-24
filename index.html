@@ -996,7 +996,7 @@
 
     function toggleMute() {
         audioEnabled = !audioEnabled;
-        document.getElementById('mute-btn').innerText = audioEnabled ? "🔊 音效: 开" : "🔇 音效: 关";
+        document.getElementById('mute-btn').innerText = audioEnabled ? "🔊" : "🔇";
         if(audioEnabled && audioCtx.state === 'suspended') audioCtx.resume();
     }
 
