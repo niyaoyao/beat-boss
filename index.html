@@ -126,7 +126,7 @@
         .skill-bar {
             position: absolute;
             right: 20px;
-            top: 100px;
+            top: 20px;
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -618,10 +618,6 @@
 <div id="game-container">
     <!-- UI -->
     <div class="ui-layer">
-        <div class="top-controls">
-            <button class="btn" onclick="toggleMute()" id="mute-btn">🔊 音效: 开</button>
-            <button class="btn" onclick="openSettings()">📷 换个脸</button>
-        </div>
         <div class="hp-container">
             <div id="hp-fill"></div>
             <div id="hp-text">1000 / 1000</div>
@@ -631,6 +627,14 @@
 
     <!-- 技能按钮 -->
     <div class="skill-bar">
+        <div class="btn" onclick="toggleMute()" id="mute-btn">
+            🔊 音效: 开
+        </div>
+
+        <div class="btn" onclick="openSettings()">
+            📷 换脸
+        </div>
+
         <div class="skill-icon" onclick="useSkill('egg')">
             🥚
             <div class="cooldown-mask" id="cd-egg"></div>
